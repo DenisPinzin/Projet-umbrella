@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+
+
+
+.imghoverduportefolio:hover .contentcard {
+    top: -10px;
+    animation-name : down;
+    animation-duration: 4s;
+
+}
+
+@keyframes down {
+    to{transform: translateY(300%)}
+}
