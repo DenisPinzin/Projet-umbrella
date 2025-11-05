@@ -6,19 +6,11 @@
 .contentcarddaft {
     display: none;
 }
-.contentcardsnake {
-    display: none;
-}
 .imghoverduportefoliodaft:hover .contentcarddaft {
     animation-duration: 1s;
     display: block;
     font-family: anonymousregular;
     margin-bottom: 10px;
 }
-.imghoverduportefoliosnake:hover .contentcardsnake {
-    animation-duration: 1s;
-    display: block;
-}
-
 
 

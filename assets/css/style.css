@@ -163,8 +163,11 @@
   }
 }
 @layer utilities {
-  .static {
-    position: static;
+  .absolute {
+    position: absolute;
+  }
+  .relative {
+    position: relative;
   }
   .-z-10 {
     z-index: calc(10 * -1);
@@ -208,9 +211,6 @@
   .h-full {
     height: 100%;
   }
-  .max-h-full {
-    max-height: 100%;
-  }
   .w-98 {
     width: calc(var(--spacing) * 98);
   }
@@ -219,9 +219,6 @@
   }
   .w-full {
     width: 100%;
-  }
-  .max-w-full {
-    max-width: 100%;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -281,24 +278,9 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
-  .xl\:h-\[80\%\] {
-    @media (width >= 80rem) {
-      height: 80%;
-    }
-  }
-  .xl\:h-full {
-    @media (width >= 80rem) {
-      height: 100%;
-    }
-  }
   .xl\:w-\[114px\] {
     @media (width >= 80rem) {
       width: 114px;
-    }
-  }
-  .xl\:w-full {
-    @media (width >= 80rem) {
-      width: 100%;
     }
   }
 }
@@ -309,18 +291,11 @@
 .contentcarddaft {
   display: none;
 }
-.contentcardsnake {
-  display: none;
-}
 .imghoverduportefoliodaft:hover .contentcarddaft {
   animation-duration: 1s;
   display: block;
   font-family: anonymousregular;
   margin-bottom: 10px;
-}
-.imghoverduportefoliosnake:hover .contentcardsnake {
-  animation-duration: 1s;
-  display: block;
 }
 @property --tw-border-style {
   syntax: "*";
