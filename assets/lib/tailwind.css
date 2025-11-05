@@ -1,15 +1,24 @@
 @import "tailwindcss";
-
-
-
-
-.imghoverduportefolio:hover .contentcard {
-    top: -10px;
-    animation-name : down;
-    animation-duration: 4s;
-
+@font-face {
+    font-family: anonymousregular;
+    src: url(/assets/fonts/Anonymous_Pro/AnonymousPro-Regular.ttf);
+}
+.contentcarddaft {
+    display: none;
+}
+.contentcardsnake {
+    display: none;
+}
+.imghoverduportefoliodaft:hover .contentcarddaft {
+    animation-duration: 1s;
+    display: block;
+    font-family: anonymousregular;
+    margin-bottom: 10px;
+}
+.imghoverduportefoliosnake:hover .contentcardsnake {
+    animation-duration: 1s;
+    display: block;
 }
 
-@keyframes down {
-    to{transform: translateY(300%)}
-}
+
+
