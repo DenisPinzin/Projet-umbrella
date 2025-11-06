@@ -29,28 +29,50 @@
     <!--PEER-CHECKED-->
     <nav class="hidden peer-checked:block bg-black w-100 md:w-auto md:bg-transparent md:block">
       <ul class="absolute z-10 md:static left-0 right-0 top-16 bg-black md:bg-transparent w-full md:w-auto md:h-auto flex flex-col md:flex-row md:gap-4 lg:gap-15 xl:gap-25 p-4 md:p-0 mt-10 md:mt-0">
-        <li><a class="Mont-Serra-Bold block py-2 hover:underline hover:underline-offset-8" href="#">Accueil</a></li>
-        <li><a class="Mont-Serra-Bold block py-2 hover:underline hover:underline-offset-8" href="#">Services</a></li>
-        <li><a class="Mont-Serra-Bold block py-2 hover:underline hover:underline-offset-8" href="#">Portfolio</a></li>
-        <li><a class="Mont-Serra-Bold block py-2 hover:underline hover:underline-offset-8" href="#">Témoignages</a></li>
-        <li><a class="Mont-Serra-Bold block py-2 hover:underline hover:underline-offset-8" href="#">Contact & Devis</a></li>
+        <li><a class="Mont-Serra-Bold block py-2 hover:underline hover:underline-offset-8" href="#presentation">Accueil</a></li>
+        <li><a class="Mont-Serra-Bold block py-2 hover:underline hover:underline-offset-8" href="#services">Services</a></li>
+        <li><a class="Mont-Serra-Bold block py-2 hover:underline hover:underline-offset-8" href="#portfolio">Portfolio</a></li>
+        <li><a class="Mont-Serra-Bold block py-2 hover:underline hover:underline-offset-8" href="#temoignage">Témoignages</a></li>
+        <li><a class="Mont-Serra-Bold block py-2 hover:underline hover:underline-offset-8" href="#contact">Contact & Devis</a></li>
       </ul>
     </nav>
   </header>
    <main>
       <!-- HERO -->
-<section class="relative bg-[url('/assets/img/concerthero.jpg')] bg-cover bg-center bg-no-repeat w-full min-h-[60vh] md:min-h-[80vh] flex items-center justify-center">
-  <!--AFTER DARK-BG-->
+<section class="relative w-full min-h-[60vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden">
+  <!-- Image de fond (mobile / fallback) -->
+  <img
+    src="/assets/img/concerthero.jpg"
+    alt="Concert Hero"
+    class="absolute inset-0 h-full w-full object-cover md:hidden"
+  />
+  
+  <video
+    class="absolute inset-0 hidden md:block h-full w-full object-cover pointer-events-none"
+    src="/assets/vid/elecvid.mp4"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+    poster="/assets/img/concerthero.jpg"
+    aria-hidden="true"
+  ></video>
+
+  <!-- AFTER DARK-BG -->
   <div class="absolute inset-0 bg-black/50"></div>
-  <h1 class="Mont-Serra-Extrabold relative text-2xl md:text-4xl lg:text-5xl font-extrabold 
-             bg-[linear-gradient(90deg,#ffffff_21%,#b200ff_88%)] bg-clip-text text-transparent">
+
+  <h1
+    class="Mont-Serra-Extrabold relative z-10 text-2xl md:text-4xl lg:text-5xl font-extrabold
+           bg-[linear-gradient(90deg,#ffffff_21%,#b200ff_88%)] bg-clip-text text-transparent text-center px-4">
     Vibre au rythme de la nuit.
   </h1>
 </section>
-        <section>
+
+        
 
 <!-- PRESENTATION -->
- <section class="flex flex-col p-15 gap-10 justify-center md:flex-row align-middle">
+ <section id="presentation" class="flex flex-col p-15 gap-10 justify-center md:flex-row align-middle">
     <div class="md:flex-1 md:flex md:align-middle md:items-center ">
       <p class="text-white text-center Mont-Serra-Bold md:text-start md:text-sm md:flex-1">Nous sommes une agence événementielle dédiée à la culture électronique et à l’univers festif. Passionnés de 
         musique, de lumière et d’expériences immersives, nous créons des événements qui font vibrer les corps et les 
@@ -107,13 +129,13 @@
   </section>
   
     <!-- section "nos sercice" -->
-    <section class="sm: my-0 mx-auto p-5 md:px-30 bg-white">
+    <section class="sm: my-0 mx-auto p-5 md:px-30">
         <!-- FIRST EVENT -->
         <div class=" flex flex-col p-5  rounded-4x">
             <div class="flex w-auto md:w-full md:gap-50 md:justify-center">
                 <img src="assets/img/wave-removebg-preview.png" class="w-[25%] " alt="wave electro">
-                <h2
-                    class="text-center h-auto self-center font-extrabold border-solid border-2 border-gray-300 rounded-4xl m-2 px-2 py-3 md:px-10 shadow-2xl shadow-purple-900">
+                <h2 id="services"
+                    class="text-white text-center h-auto self-center font-extrabold border-solid border-2 border-gray-300 rounded-4xl m-2 px-2 py-3 md:px-10 shadow-2xl shadow-purple-900">
                     Nos
                     Porpositions
                     évenementiel</h2>
@@ -167,7 +189,7 @@
             <div class="flex w-auto md:gap-20 justify-center">
                 <img src="assets/img/wave-removebg-preview.png" class="w-[25%]" alt="wave electro">
                 <h2
-                    class="text-center h-auto self-center font-extrabold border-solid border-2 border-gray-300 rounded-4xl m-2 px-2 py-3 md:px-10 shadow-2xl shadow-purple-900">
+                    class="text-white text-center h-auto self-center font-extrabold border-solid border-2 border-gray-300 rounded-4xl m-2 px-2 py-3 md:px-10 shadow-2xl shadow-purple-900">
                     Nos
                     Propositions
                     évenements commercial</h2>
@@ -215,7 +237,7 @@
         <div class="flex md:gap-50 md:flex justify-center">
             <img src="assets/img/wave-removebg-preview.png" class="w-[25%]" alt="wave electro">
             <h2
-                class="text-center self-center font-extrabold border-solid border-2 border-gray-300 rounded-4xl m-2 px-2 py-3 md:px-10 shadow-2xl shadow-purple-900">
+                class="text-white text-center self-center font-extrabold border-solid border-2 border-gray-300 rounded-4xl m-2 px-2 py-3 md:px-10 shadow-2xl shadow-purple-900">
                 Nos
                 évenementiel V.I.P</h2>
             <img src="assets/img/wave-removebg-preview.png" class=" w-[25%]  alt=">
@@ -292,7 +314,7 @@
         <div class="flex w-auto md:gap-50 md:justify-center">
             <img src="assets/img/wave-removebg-preview.png" class="w-[25%]" alt="">
             <h2
-                class="text-center self-center font-extrabold border-solid border-2 border-gray-300 rounded-4xl m-2 px-2 py-3 md:px-10 shadow-2xl shadow-purple-900">
+                class="text-white text-center self-center font-extrabold border-solid border-2 border-gray-300 rounded-4xl m-2 px-2 py-3 md:px-10 shadow-2xl shadow-purple-900">
                 Nos
                 Porpositions
                 évenementiel</h2>
@@ -426,7 +448,7 @@
         </section>
 </main>
   <footer class="bg-black text-white">
-    <div>
+    <div id="contact">
         <nav>
             <ul class="text-center">
                 <li><a href="" class=" hover:text-purple-300 duration-100 ease-in">Page d'Accueil</a></li>
