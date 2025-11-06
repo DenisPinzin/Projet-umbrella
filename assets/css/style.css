@@ -252,6 +252,9 @@
   .hidden {
     display: none;
   }
+  .inline-block {
+    display: inline-block;
+  }
   .table {
     display: table;
   }
@@ -614,6 +617,11 @@
       @media (hover: hover) {
         text-underline-offset: 8px;
       }
+    }
+  }
+  .md\:visible {
+    @media (width >= 48rem) {
+      visibility: visible;
     }
   }
   .md\:static {
