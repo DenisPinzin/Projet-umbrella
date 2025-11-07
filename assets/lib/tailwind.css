@@ -10,7 +10,9 @@
     display: block;
     font-family: anonymousregular;
     margin-bottom: 10px;
+    
 }
+
 
 @theme {
     --animate-scroll:scroll 20s linear infinite; 
@@ -35,5 +37,10 @@
     100% {
         transform:translate(0%);
     }
+}
+
+
+.powerpause:hover .pause {
+    animation-play-state: paused;
 }
 
