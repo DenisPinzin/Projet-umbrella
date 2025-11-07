@@ -1,1 +1,41 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: anonymousregular;
+  src: url(/assets/fonts/Anonymous_Pro/AnonymousPro-Regular.ttf);
+}
+.contentcarddaft {
+  display: none;
+}
+.imghoverduportefoliodaft:hover .contentcarddaft {
+  display: block;
+  font-family: anonymousregular;
+  margin-bottom: 10px;
+}
+
+@theme {
+  --animate-scroll: scroll 20s linear infinite;
+  --animate-scroll2: scroll2 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+@keyframes scroll2 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
+
+.powerpause:hover .pause {
+  animation-play-state: paused;
+}
